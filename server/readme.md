@@ -8,4 +8,4 @@ let's see these steps one by one
 4. Connecting Backend with MongoDB Database (Node.js + Mongoose Connection)
 5. Securing Your Private Data with Dotenv in our Backend App
 6. Creating the User Schema & Model
- 
+7. Storing Registered User Data in an Online Database with Express and Mongoose
