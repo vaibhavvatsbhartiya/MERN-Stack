@@ -7,5 +7,5 @@ let's see these steps one by one
 3. Controllers in Express.js 🔥 Managing Your Application's Logic
 4. Connecting Backend with MongoDB Database (Node.js + Mongoose Connection)
 5. Securing Your Private Data with Dotenv in our Backend App
-
+6. Creating the User Schema & Model
  
