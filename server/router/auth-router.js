@@ -1,6 +1,8 @@
 import  Express  from "express"; 
 // import  Router  from "express";
-import home from "../controllers/auth-controller.js";
+// import home from "../controllers/auth-controller.js";
+import { home, register }  from "../controllers/auth-controller.js";
+
 
 const router = Express.Router();
 
@@ -14,6 +16,7 @@ const router = Express.Router();
 // alternative method to use router
 
 router.route("/").get( home );
+router.route("/register").post( register );
 
 
 export default router;
