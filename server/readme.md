@@ -9,3 +9,6 @@ let's see these steps one by one
 5. Securing Your Private Data with Dotenv in our Backend App
 6. Creating the User Schema & Model
 7. Storing Registered User Data in an Online Database with Express and Mongoose
+8. Secure User Password using Bcrypt.js
+**note:- user-model and auth-controller dono files m bcrypt ka code hai and it depend k ki wale k need mko hai. Dono ko use kr skte hai.**
+ 

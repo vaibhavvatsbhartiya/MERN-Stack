@@ -1,5 +1,5 @@
 import User  from "../models/user-model.js";
-
+// import bcrypt from '../node_modules/bcrypt/bcrypt.js';
 
 
 export const home = async (req, res) => {
@@ -33,15 +33,21 @@ export const register = async (req, res) => {
     if (userExist){
       return res.status(400).json({msg:"user already exist"})
     }
-    const user =  await User.create({userEmail:email});
+
+    // hash password
+    // const addSalt = 10;
+    // const hashPassword = await bcrypt.hash(password, addSalt);
+
+    const user =  await User.create({userName:name, userEmail:email, userPassword:password, userPhone:phone});
     
 
     res
-      .status(200)
-      .json({user});
+      .status(201)
+      .json({msg : userCreated});
       // .send("welcome, aap ka data gaya" , user);
   } catch (err) {
     console.log(err);
+    res.status(500).json("Internal Server Error");
   }
 };
 
